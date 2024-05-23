@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\silis\iExamenSistemas\Examen.ncd
+OUTFILE=D:\silis\iExamenSistemas\Examen.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=D:\silis\iExamenSistemas
+LICENSE=WebPack
+USER_INFO=212694657_0_0_679

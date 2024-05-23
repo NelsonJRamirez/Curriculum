@@ -1,0 +1,6 @@
+main.c:91:6:c_wave_square_	3
+main.c:108:6:c_wave_triangle_	3
+main.c:128:5:main	120
+main.c:677:6:c_wave_sine_	2
+main.c:693:6:SystemClock_Config	4
+main.c:746:6:Error_Handler	1

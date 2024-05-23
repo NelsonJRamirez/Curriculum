@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/silis/LAvadora/lavadora.xst" -ofn "D:/silis/LAvadora/lavadora.syr" 
+xst -intstyle ise -ifn "D:/silis/LAvadora/lavadora.xst" -ofn "D:/silis/LAvadora/lavadora.syr" 

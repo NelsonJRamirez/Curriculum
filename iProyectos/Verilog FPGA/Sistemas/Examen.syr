@@ -1,0 +1,1425 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.43 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.43 secs
+ 
+--> Reading design: Examen.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Examen.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Examen"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg324
+
+---- Source Options
+Top Module Name                    : Examen
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\silis\iExamenSistemas\Examen.v" into library work
+Parsing module <Examen>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Examen>.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 215: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 252: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 297: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 349: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 392: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 401: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 511: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 1024: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\silis\iExamenSistemas\Examen.v" Line 1036: Result of 30-bit expression is truncated to fit in 29-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Examen>.
+    Related source file is "D:\silis\iExamenSistemas\Examen.v".
+        iLavado_Rapido = 2'b00
+        iEsjuagarYCentrifugar = 2'b01
+        iCentrifugar = 2'b10
+    Register <previousState> equivalent to <iStart_out> has been removed
+    Found 1-bit register for signal <btn>.
+    Found 1-bit register for signal <iLavado_Fast>.
+    Found 1-bit register for signal <iEnjuagar_Centrifugar>.
+    Found 1-bit register for signal <iCentrifugarL>.
+    Found 1-bit register for signal <iAgua_Fria>.
+    Found 1-bit register for signal <iAgua_Caliente>.
+    Found 1-bit register for signal <iTiempoLavado_1>.
+    Found 1-bit register for signal <iTiempoLavado_2>.
+    Found 1-bit register for signal <iTiempoLavado_3>.
+    Found 1-bit register for signal <iTiempoLavado_4>.
+    Found 1-bit register for signal <iTiempo_Bajo>.
+    Found 1-bit register for signal <iTiempo_Medio>.
+    Found 1-bit register for signal <iTiempo_Alto>.
+    Found 1-bit register for signal <iTiempo_FULL>.
+    Found 1-bit register for signal <LED3>.
+    Found 2-bit register for signal <state2>.
+    Found 3-bit register for signal <siguiente_estado>.
+    Found 3-bit register for signal <estado>.
+    Found 2-bit register for signal <state_Temperatura>.
+    Found 2-bit register for signal <iState_Tiempo_Lavado>.
+    Found 2-bit register for signal <iState_Segundos_Lavado>.
+    Found 4-bit register for signal <iLed_Temperatura>.
+    Found 4-bit register for signal <iLed_Tiempo_Lavado>.
+    Found 4-bit register for signal <iLed_Segundos_Lavado>.
+    Found 9-bit register for signal <iConteo_Tiempo_Llenado>.
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <clk_outs>.
+    Found 32-bit register for signal <counts>.
+    Found 1-bit register for signal <iEncendido>.
+    Found 2-bit register for signal <state>.
+    Found 1-bit register for signal <iStart_out>.
+    Found 26-bit register for signal <iConteoMusic>.
+    Found 1-bit register for signal <iMusic>.
+    Found 29-bit register for signal <countD>.
+    Found 1-bit register for signal <clk_outDisplay>.
+    Found 7-bit register for signal <iSegmentos_Display>.
+    Found 3-bit register for signal <iBase_Segmentos>.
+    Found 3-bit register for signal <selector>.
+    Found 1-bit register for signal <clk_out>.
+    Found 24-bit register for signal <iCount_Frecuencias>.
+    Found 1-bit register for signal <iCLK_Tiempo_1HZ>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | iEncender (rising_edge)                        |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_0> for signal <state2>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | pb (rising_edge)                               |
+    | Reset              | iEncendido (negative)                          |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <count[31]_GND_1_o_add_2_OUT> created at line 107.
+    Found 32-bit adder for signal <counts[31]_GND_1_o_add_12_OUT> created at line 118.
+    Found 2-bit adder for signal <state_Temperatura[1]_GND_1_o_add_50_OUT> created at line 215.
+    Found 2-bit adder for signal <iState_Tiempo_Lavado[1]_GND_1_o_add_63_OUT> created at line 252.
+    Found 2-bit adder for signal <iState_Segundos_Lavado[1]_GND_1_o_add_80_OUT> created at line 297.
+    Found 24-bit adder for signal <iCount_Frecuencias[23]_GND_1_o_add_101_OUT> created at line 401.
+    Found 26-bit adder for signal <iConteoMusic[25]_GND_1_o_add_609_OUT> created at line 1024.
+    Found 29-bit adder for signal <countD[28]_GND_1_o_add_614_OUT> created at line 1036.
+    Found 3-bit adder for signal <selector[2]_GND_1_o_add_627_OUT> created at line 1054.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_263_OUT<8:0>> created at line 511.
+    Found 1x1-bit multiplier for signal <n0842> created at line 553.
+    Found 1x1-bit multiplier for signal <n0843> created at line 554.
+    Found 1x1-bit multiplier for signal <n0844> created at line 554.
+    Found 1x1-bit multiplier for signal <n0845> created at line 554.
+    Found 1x1-bit multiplier for signal <n0846> created at line 555.
+    Found 1x1-bit multiplier for signal <n0847> created at line 555.
+    Found 1x1-bit multiplier for signal <n0848> created at line 555.
+    Found 1x1-bit multiplier for signal <n0849> created at line 556.
+    Found 1x1-bit multiplier for signal <n0850> created at line 556.
+    Found 1x1-bit multiplier for signal <n0851> created at line 556.
+    Found 1x1-bit multiplier for signal <n0852> created at line 556.
+    Found 1x1-bit multiplier for signal <n0853> created at line 557.
+    Found 1x1-bit multiplier for signal <n0854> created at line 557.
+    Found 1x1-bit multiplier for signal <n0855> created at line 557.
+    Found 1x1-bit multiplier for signal <n0856> created at line 557.
+    Found 1x1-bit multiplier for signal <n0857> created at line 557.
+    Found 1x1-bit multiplier for signal <n0858> created at line 558.
+    Found 1x1-bit multiplier for signal <n0859> created at line 558.
+    Found 1x1-bit multiplier for signal <n0860> created at line 558.
+    Found 1x1-bit multiplier for signal <n0861> created at line 558.
+    Found 1x1-bit multiplier for signal <n0862> created at line 558.
+    Found 1x1-bit multiplier for signal <n0863> created at line 558.
+    Found 1x1-bit multiplier for signal <n0864> created at line 558.
+    Found 1x1-bit multiplier for signal <n0865> created at line 559.
+    Found 1x1-bit multiplier for signal <n0866> created at line 559.
+    Found 1x1-bit multiplier for signal <n0867> created at line 559.
+    Found 1x1-bit multiplier for signal <n0868> created at line 559.
+    Found 1x1-bit multiplier for signal <n0869> created at line 559.
+    Found 1x1-bit multiplier for signal <n0870> created at line 559.
+    Found 1x1-bit multiplier for signal <n0871> created at line 559.
+    Found 1x1-bit multiplier for signal <n0872> created at line 559.
+    Found 1x1-bit multiplier for signal <n0873> created at line 567.
+    Found 1x1-bit multiplier for signal <n0874> created at line 568.
+    Found 1x1-bit multiplier for signal <n0875> created at line 568.
+    Found 1x1-bit multiplier for signal <n0876> created at line 568.
+    Found 1x1-bit multiplier for signal <n0877> created at line 569.
+    Found 1x1-bit multiplier for signal <n0878> created at line 569.
+    Found 1x1-bit multiplier for signal <n0879> created at line 569.
+    Found 1x1-bit multiplier for signal <n0880> created at line 570.
+    Found 1x1-bit multiplier for signal <n0881> created at line 570.
+    Found 1x1-bit multiplier for signal <n0882> created at line 570.
+    Found 1x1-bit multiplier for signal <n0883> created at line 570.
+    Found 1x1-bit multiplier for signal <n0884> created at line 571.
+    Found 1x1-bit multiplier for signal <n0885> created at line 571.
+    Found 1x1-bit multiplier for signal <n0886> created at line 571.
+    Found 1x1-bit multiplier for signal <n0887> created at line 571.
+    Found 1x1-bit multiplier for signal <n0888> created at line 571.
+    Found 1x1-bit multiplier for signal <n0889> created at line 572.
+    Found 1x1-bit multiplier for signal <n0890> created at line 572.
+    Found 1x1-bit multiplier for signal <n0891> created at line 572.
+    Found 1x1-bit multiplier for signal <n0892> created at line 572.
+    Found 1x1-bit multiplier for signal <n0893> created at line 572.
+    Found 1x1-bit multiplier for signal <n0894> created at line 572.
+    Found 1x1-bit multiplier for signal <n0895> created at line 572.
+    Found 1x1-bit multiplier for signal <n0896> created at line 573.
+    Found 1x1-bit multiplier for signal <n0897> created at line 573.
+    Found 1x1-bit multiplier for signal <n0898> created at line 573.
+    Found 1x1-bit multiplier for signal <n0899> created at line 573.
+    Found 1x1-bit multiplier for signal <n0900> created at line 573.
+    Found 1x1-bit multiplier for signal <n0901> created at line 573.
+    Found 1x1-bit multiplier for signal <n0902> created at line 573.
+    Found 1x1-bit multiplier for signal <n0903> created at line 573.
+    Found 1x1-bit multiplier for signal <n0904> created at line 581.
+    Found 1x1-bit multiplier for signal <n0905> created at line 582.
+    Found 1x1-bit multiplier for signal <n0906> created at line 582.
+    Found 1x1-bit multiplier for signal <n0907> created at line 582.
+    Found 1x1-bit multiplier for signal <n0908> created at line 583.
+    Found 1x1-bit multiplier for signal <n0909> created at line 583.
+    Found 1x1-bit multiplier for signal <n0910> created at line 583.
+    Found 1x1-bit multiplier for signal <n0911> created at line 584.
+    Found 1x1-bit multiplier for signal <n0912> created at line 584.
+    Found 1x1-bit multiplier for signal <n0913> created at line 584.
+    Found 1x1-bit multiplier for signal <n0914> created at line 584.
+    Found 1x1-bit multiplier for signal <n0915> created at line 585.
+    Found 1x1-bit multiplier for signal <n0916> created at line 585.
+    Found 1x1-bit multiplier for signal <n0917> created at line 585.
+    Found 1x1-bit multiplier for signal <n0918> created at line 585.
+    Found 1x1-bit multiplier for signal <n0919> created at line 585.
+    Found 1x1-bit multiplier for signal <n0920> created at line 586.
+    Found 1x1-bit multiplier for signal <n0921> created at line 586.
+    Found 1x1-bit multiplier for signal <n0922> created at line 586.
+    Found 1x1-bit multiplier for signal <n0923> created at line 586.
+    Found 1x1-bit multiplier for signal <n0924> created at line 586.
+    Found 1x1-bit multiplier for signal <n0925> created at line 586.
+    Found 1x1-bit multiplier for signal <n0926> created at line 586.
+    Found 1x1-bit multiplier for signal <n0927> created at line 587.
+    Found 1x1-bit multiplier for signal <n0928> created at line 587.
+    Found 1x1-bit multiplier for signal <n0929> created at line 587.
+    Found 1x1-bit multiplier for signal <n0930> created at line 587.
+    Found 1x1-bit multiplier for signal <n0931> created at line 587.
+    Found 1x1-bit multiplier for signal <n0932> created at line 587.
+    Found 1x1-bit multiplier for signal <n0933> created at line 587.
+    Found 1x1-bit multiplier for signal <n0934> created at line 587.
+    Found 1x1-bit multiplier for signal <n0948> created at line 1068.
+    Found 1x1-bit multiplier for signal <n0949> created at line 1068.
+    Found 1x1-bit multiplier for signal <n0950> created at line 1070.
+    Found 1x1-bit multiplier for signal <n0951> created at line 1071.
+    Found 1x1-bit multiplier for signal <n0952> created at line 1071.
+    Found 1x1-bit multiplier for signal <n0772> created at line 1071.
+    Found 1x1-bit multiplier for signal <n0953> created at line 1071.
+    Found 512x15-bit Read Only RAM for signal <iConteo_Tiempo_Llenado[8]_GND_1_o_wide_mux_604_OUT>
+    Found 4x3-bit Read Only RAM for signal <_n1143>
+    Found 4x8-bit Read Only RAM for signal <_n1334>
+    Found 4x5-bit Read Only RAM for signal <_n1340>
+    Found 4x8-bit Read Only RAM for signal <_n1345>
+    Found 24-bit comparator greater for signal <iCount_Frecuencias[23]_GND_1_o_LessThan_97_o> created at line 391
+    Found 24-bit comparator greater for signal <iCount_Frecuencias[23]_GND_1_o_LessThan_101_o> created at line 400
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_283_o> created at line 521
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_290_o> created at line 522
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_297_o> created at line 523
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_304_o> created at line 524
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_311_o> created at line 525
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_318_o> created at line 526
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_325_o> created at line 527
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_332_o> created at line 528
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_339_o> created at line 529
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_346_o> created at line 530
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_353_o> created at line 531
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_360_o> created at line 532
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_367_o> created at line 533
+    Found 9-bit comparator greater for signal <GND_1_o_iConteo_Tiempo_Llenado[8]_LessThan_374_o> created at line 534
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_381_o> created at line 535
+    Found 9-bit comparator greater for signal <PWR_1_o_iConteo_Tiempo_Llenado[8]_LessThan_388_o> created at line 536
+    Found 9-bit comparator lessequal for signal <n0419> created at line 538
+    Found 9-bit comparator lessequal for signal <n0440> created at line 539
+    Found 9-bit comparator lessequal for signal <n0450> created at line 540
+    Found 9-bit comparator lessequal for signal <n0460> created at line 541
+    Summary:
+	inferred   5 RAM(s).
+	inferred 100 Multiplier(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred 213 D-type flip-flop(s).
+	inferred  22 Comparator(s).
+	inferred  70 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <Examen> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 4x3-bit single-port Read Only RAM                     : 1
+ 4x5-bit single-port Read Only RAM                     : 1
+ 4x8-bit single-port Read Only RAM                     : 2
+ 512x15-bit single-port Read Only RAM                  : 1
+# Multipliers                                          : 100
+ 1x1-bit multiplier                                    : 100
+# Adders/Subtractors                                   : 10
+ 2-bit adder                                           : 3
+ 24-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 2
+ 9-bit subtractor                                      : 1
+# Registers                                            : 40
+ 1-bit register                                        : 22
+ 2-bit register                                        : 4
+ 24-bit register                                       : 1
+ 26-bit register                                       : 1
+ 29-bit register                                       : 1
+ 3-bit register                                        : 4
+ 32-bit register                                       : 2
+ 4-bit register                                        : 3
+ 7-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 22
+ 24-bit comparator greater                             : 2
+ 9-bit comparator greater                              : 16
+ 9-bit comparator lessequal                            : 4
+# Multiplexers                                         : 70
+ 1-bit 2-to-1 multiplexer                              : 29
+ 15-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <fsmfake1_1> has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <fsmfake1_0> of sequential type is unconnected in block <Examen>.
+
+Synthesizing (advanced) Unit <Examen>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <iConteoMusic>: 1 register on signal <iConteoMusic>.
+The following registers are absorbed into counter <countD>: 1 register on signal <countD>.
+The following registers are absorbed into counter <counts>: 1 register on signal <counts>.
+The following registers are absorbed into counter <iState_Tiempo_Lavado>: 1 register on signal <iState_Tiempo_Lavado>.
+The following registers are absorbed into counter <state_Temperatura>: 1 register on signal <state_Temperatura>.
+The following registers are absorbed into counter <iState_Segundos_Lavado>: 1 register on signal <iState_Segundos_Lavado>.
+The following registers are absorbed into counter <selector>: 1 register on signal <selector>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1143> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <estado<1:0>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_iConteo_Tiempo_Llenado[8]_GND_1_o_wide_mux_604_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 15-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <iConteo_Tiempo_Llenado> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1340> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 5-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <state_Temperatura> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1334> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <iState_Tiempo_Lavado> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1345> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <iState_Segundos_Lavado> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Examen> synthesized (advanced).
+WARNING:Xst:2677 - Node <fsmfake1_0> of sequential type is unconnected in block <Examen>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 4x3-bit single-port distributed Read Only RAM         : 1
+ 4x5-bit single-port distributed Read Only RAM         : 1
+ 4x8-bit single-port distributed Read Only RAM         : 2
+ 512x15-bit single-port distributed Read Only RAM      : 1
+# Multipliers                                          : 100
+ 1x1-bit multiplier                                    : 100
+# Adders/Subtractors                                   : 2
+ 24-bit adder                                          : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 8
+ 2-bit up counter                                      : 3
+ 26-bit up counter                                     : 1
+ 29-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+# Comparators                                          : 22
+ 24-bit comparator greater                             : 2
+ 9-bit comparator greater                              : 16
+ 9-bit comparator lessequal                            : 4
+# Multiplexers                                         : 67
+ 1-bit 2-to-1 multiplexer                              : 29
+ 15-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <fsmfake1_1> has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state2[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+-------------------
+INFO:Xst:2261 - The FF/Latch <iTiempoLavado_1> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Tiempo_Lavado_0> 
+INFO:Xst:2261 - The FF/Latch <iTiempoLavado_2> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Tiempo_Lavado_1> 
+INFO:Xst:2261 - The FF/Latch <iTiempoLavado_3> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Tiempo_Lavado_2> 
+INFO:Xst:2261 - The FF/Latch <iTiempoLavado_4> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Tiempo_Lavado_3> 
+INFO:Xst:2261 - The FF/Latch <iTiempo_Bajo> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Segundos_Lavado_0> 
+INFO:Xst:2261 - The FF/Latch <iTiempo_Medio> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Segundos_Lavado_1> 
+INFO:Xst:2261 - The FF/Latch <iTiempo_Alto> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Segundos_Lavado_2> 
+INFO:Xst:2261 - The FF/Latch <iTiempo_FULL> in Unit <Examen> is equivalent to the following FF/Latch, which will be removed : <iLed_Segundos_Lavado_3> 
+
+Optimizing unit <Examen> ...
+WARNING:Xst:1710 - FF/Latch <countD_28> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_27> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_26> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_25> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_24> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_23> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_22> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_21> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_20> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_19> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_18> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countD_17> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_31> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_30> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_29> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_28> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_27> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_26> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_25> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <iConteoMusic_25> has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iCount_Frecuencias_23> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iCount_Frecuencias_22> (without init value) has a constant value of 0 in block <Examen>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Examen, actual ratio is 9.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 183
+ Flip-Flops                                            : 183
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Examen.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 780
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 116
+#      LUT2                        : 22
+#      LUT3                        : 53
+#      LUT4                        : 21
+#      LUT5                        : 107
+#      LUT6                        : 162
+#      MUXCY                       : 128
+#      MUXF7                       : 24
+#      MUXF8                       : 6
+#      VCC                         : 1
+#      XORCY                       : 121
+# FlipFlops/Latches                : 183
+#      FD                          : 58
+#      FDC                         : 17
+#      FDCE                        : 24
+#      FDE                         : 14
+#      FDR                         : 69
+#      FDS                         : 1
+# Clock Buffers                    : 7
+#      BUFG                        : 1
+#      BUFGP                       : 6
+# IO Buffers                       : 99
+#      IBUF                        : 2
+#      OBUF                        : 97
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             183  out of  11440     1%  
+ Number of Slice LUTs:                  499  out of   5720     8%  
+    Number used as Logic:               499  out of   5720     8%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    500
+   Number with an unused Flip Flop:     317  out of    500    63%  
+   Number with an unused LUT:             1  out of    500     0%  
+   Number of fully used LUT-FF pairs:   182  out of    500    36%  
+   Number of unique control sets:        22
+
+IO Utilization: 
+ Number of IOs:                         133
+ Number of bonded IOBs:                 105  out of    200    52%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                7  out of     16    43%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_in                             | BUFGP                  | 126   |
+iStart                             | BUFGP                  | 1     |
+clk_out_OBUF                       | NONE(estado_0)         | 9     |
+clk_outDisplay_OBUF                | NONE(iBase_Segmentos_0)| 13    |
+iBoton_Temperatura                 | BUFGP                  | 8     |
+iBoton_Tiempo_Lavado               | BUFGP                  | 6     |
+iBoton_Tiempo                      | BUFGP                  | 6     |
+iCLK_Tiempo_1HZ_OBUF               | NONE(bContando)        | 10    |
+iEncender                          | IBUF+BUFG              | 2     |
+pb                                 | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.566ns (Maximum Frequency: 179.653MHz)
+   Minimum input arrival time before clock: 5.786ns
+   Maximum output required time after clock: 12.760ns
+   Maximum combinational path delay: 12.518ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 5.206ns (frequency: 192.095MHz)
+  Total number of paths / destination ports: 6076 / 197
+-------------------------------------------------------------------------
+Delay:               5.206ns (Levels of Logic = 3)
+  Source:            counts_14 (FF)
+  Destination:       counts_0 (FF)
+  Source Clock:      clk_in rising
+  Destination Clock: clk_in rising
+
+  Data Path: counts_14 to counts_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.196  counts_14 (counts_14)
+     LUT5:I0->O            1   0.254   1.112  _n11562 (_n11562)
+     LUT6:I1->O           33   0.254   1.537  _n11567 (_n1156)
+     LUT5:I4->O            1   0.254   0.000  counts_0_rstpot (counts_0_rstpot)
+     FD:D                      0.074          counts_0
+    ----------------------------------------
+    Total                      5.206ns (1.361ns logic, 3.845ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iStart'
+  Clock period: 3.863ns (frequency: 258.880MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               3.863ns (Levels of Logic = 1)
+  Source:            iStart_out (FF)
+  Destination:       iStart_out (FF)
+  Source Clock:      iStart rising
+  Destination Clock: iStart rising
+
+  Data Path: iStart_out to iStart_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             55   0.525   1.859  iStart_out (iStart_out_OBUF)
+     INV:I->O              3   0.255   0.765  iStart_out_inv1_INV_0 (iStart_out_inv)
+     FDS:S                     0.459          iStart_out
+    ----------------------------------------
+    Total                      3.863ns (1.239ns logic, 2.624ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_out_OBUF'
+  Clock period: 2.850ns (frequency: 350.917MHz)
+  Total number of paths / destination ports: 22 / 9
+-------------------------------------------------------------------------
+Delay:               2.850ns (Levels of Logic = 1)
+  Source:            iLavado_Fast (FF)
+  Destination:       iLavado_Fast (FF)
+  Source Clock:      clk_out_OBUF rising
+  Destination Clock: clk_out_OBUF rising
+
+  Data Path: iLavado_Fast to iLavado_Fast
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            44   0.525   1.997  iLavado_Fast (iLavado_Fast_OBUF)
+     LUT5:I1->O            1   0.254   0.000  Mmux_iLavado_Fast_GND_1_o_MUX_48_o11 (iLavado_Fast_GND_1_o_MUX_48_o)
+     FDCE:D                    0.074          iLavado_Fast
+    ----------------------------------------
+    Total                      2.850ns (0.853ns logic, 1.997ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_outDisplay_OBUF'
+  Clock period: 3.261ns (frequency: 306.654MHz)
+  Total number of paths / destination ports: 55 / 23
+-------------------------------------------------------------------------
+Delay:               3.261ns (Levels of Logic = 1)
+  Source:            selector_1 (FF)
+  Destination:       iBase_Segmentos_0 (FF)
+  Source Clock:      clk_outDisplay_OBUF rising
+  Destination Clock: clk_outDisplay_OBUF rising
+
+  Data Path: selector_1 to iBase_Segmentos_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.525   1.177  selector_1 (selector_1)
+     LUT3:I1->O           10   0.250   1.007  _n1294_inv1 (_n1294_inv)
+     FDE:CE                    0.302          iBase_Segmentos_0
+    ----------------------------------------
+    Total                      3.261ns (1.077ns logic, 2.184ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iBoton_Temperatura'
+  Clock period: 2.006ns (frequency: 498.504MHz)
+  Total number of paths / destination ports: 14 / 8
+-------------------------------------------------------------------------
+Delay:               2.006ns (Levels of Logic = 1)
+  Source:            state_Temperatura_0 (FF)
+  Destination:       iLed_Temperatura_3 (FF)
+  Source Clock:      iBoton_Temperatura rising
+  Destination Clock: iBoton_Temperatura rising
+
+  Data Path: state_Temperatura_0 to iLed_Temperatura_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.525   1.172  state_Temperatura_0 (state_Temperatura_0)
+     LUT3:I0->O            1   0.235   0.000  Mmux_iLed_Temperatura[3]_GND_1_o_mux_57_OUT41 (iLed_Temperatura[3]_GND_1_o_mux_57_OUT<3>)
+     FDCE:D                    0.074          iLed_Temperatura_3
+    ----------------------------------------
+    Total                      2.006ns (0.834ns logic, 1.172ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iBoton_Tiempo_Lavado'
+  Clock period: 1.938ns (frequency: 515.996MHz)
+  Total number of paths / destination ports: 11 / 6
+-------------------------------------------------------------------------
+Delay:               1.938ns (Levels of Logic = 1)
+  Source:            iState_Tiempo_Lavado_0 (FF)
+  Destination:       iTiempoLavado_4 (FF)
+  Source Clock:      iBoton_Tiempo_Lavado rising
+  Destination Clock: iBoton_Tiempo_Lavado rising
+
+  Data Path: iState_Tiempo_Lavado_0 to iTiempoLavado_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.525   1.104  iState_Tiempo_Lavado_0 (iState_Tiempo_Lavado_0)
+     LUT3:I0->O            1   0.235   0.000  iLed_Tiempo_Lavado[3]_GND_1_o_mux_73_OUT<3>1 (iLed_Tiempo_Lavado[3]_GND_1_o_mux_73_OUT<3>)
+     FDCE:D                    0.074          iTiempoLavado_4
+    ----------------------------------------
+    Total                      1.938ns (0.834ns logic, 1.104ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iBoton_Tiempo'
+  Clock period: 1.938ns (frequency: 515.996MHz)
+  Total number of paths / destination ports: 11 / 6
+-------------------------------------------------------------------------
+Delay:               1.938ns (Levels of Logic = 1)
+  Source:            iState_Segundos_Lavado_0 (FF)
+  Destination:       iTiempo_FULL (FF)
+  Source Clock:      iBoton_Tiempo rising
+  Destination Clock: iBoton_Tiempo rising
+
+  Data Path: iState_Segundos_Lavado_0 to iTiempo_FULL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.525   1.104  iState_Segundos_Lavado_0 (iState_Segundos_Lavado_0)
+     LUT3:I0->O            1   0.235   0.000  iLed_Segundos_Lavado[3]_GND_1_o_mux_90_OUT<3>1 (iLed_Segundos_Lavado[3]_GND_1_o_mux_90_OUT<3>)
+     FDCE:D                    0.074          iTiempo_FULL
+    ----------------------------------------
+    Total                      1.938ns (0.834ns logic, 1.104ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iCLK_Tiempo_1HZ_OBUF'
+  Clock period: 5.566ns (frequency: 179.653MHz)
+  Total number of paths / destination ports: 147 / 10
+-------------------------------------------------------------------------
+Delay:               5.566ns (Levels of Logic = 3)
+  Source:            iConteo_Tiempo_Llenado_4 (FF)
+  Destination:       bContando (FF)
+  Source Clock:      iCLK_Tiempo_1HZ_OBUF rising
+  Destination Clock: iCLK_Tiempo_1HZ_OBUF rising
+
+  Data Path: iConteo_Tiempo_Llenado_4 to bContando
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             53   0.525   1.844  iConteo_Tiempo_Llenado_4 (iConteo_Tiempo_Llenado_4)
+     LUT2:I1->O            2   0.254   0.726  n0437<8>_SW0 (N9)
+     LUT6:I5->O            2   0.254   0.726  n0437<8> (n0437)
+     LUT6:I5->O            1   0.254   0.681  _n1250_inv1 (_n1250_inv)
+     FDCE:CE                   0.302          bContando
+    ----------------------------------------
+    Total                      5.566ns (1.589ns logic, 3.977ns route)
+                                       (28.5% logic, 71.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iEncender'
+  Clock period: 2.260ns (frequency: 442.478MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.260ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd2 (FF)
+  Destination:       state_FSM_FFd2 (FF)
+  Source Clock:      iEncender rising
+  Destination Clock: iEncender rising
+
+  Data Path: state_FSM_FFd2 to state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  state_FSM_FFd2 (state_FSM_FFd2)
+     INV:I->O              1   0.255   0.681  state_FSM_FFd2-In1_INV_0 (state_FSM_FFd2-In)
+     FD:D                      0.074          state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.260ns (0.854ns logic, 1.406ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pb'
+  Clock period: 2.260ns (frequency: 442.478MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.260ns (Levels of Logic = 1)
+  Source:            state2_FSM_FFd2 (FF)
+  Destination:       state2_FSM_FFd2 (FF)
+  Source Clock:      pb rising
+  Destination Clock: pb rising
+
+  Data Path: state2_FSM_FFd2 to state2_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.725  state2_FSM_FFd2 (state2_FSM_FFd2)
+     INV:I->O              1   0.255   0.681  state2_FSM_FFd2-In1_INV_0 (state2_FSM_FFd2-In)
+     FDC:D                     0.074          state2_FSM_FFd2
+    ----------------------------------------
+    Total                      2.260ns (0.854ns logic, 1.406ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_out_OBUF'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.359ns (Levels of Logic = 2)
+  Source:            iEncender (PAD)
+  Destination:       estado_0 (FF)
+  Destination Clock: clk_out_OBUF rising
+
+  Data Path: iEncender to estado_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iEncender_IBUF (iEncender_IBUF)
+     INV:I->O             39   0.255   1.636  iEncender_inv1_INV_0 (iEncender_inv)
+     FDC:CLR                   0.459          estado_0
+    ----------------------------------------
+    Total                      4.359ns (2.042ns logic, 2.317ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iBoton_Temperatura'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.359ns (Levels of Logic = 2)
+  Source:            iEncender (PAD)
+  Destination:       iAgua_Fria (FF)
+  Destination Clock: iBoton_Temperatura rising
+
+  Data Path: iEncender to iAgua_Fria
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iEncender_IBUF (iEncender_IBUF)
+     INV:I->O             39   0.255   1.636  iEncender_inv1_INV_0 (iEncender_inv)
+     FDCE:CLR                  0.459          iAgua_Caliente
+    ----------------------------------------
+    Total                      4.359ns (2.042ns logic, 2.317ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_outDisplay_OBUF'
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Offset:              5.206ns (Levels of Logic = 3)
+  Source:            iPausa (PAD)
+  Destination:       iSegmentos_Display_3 (FF)
+  Destination Clock: clk_outDisplay_OBUF rising
+
+  Data Path: iPausa to iSegmentos_Display_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            61   1.328   2.361  iPausa_IBUF (iPausa_IBUF)
+     LUT6:I0->O            2   0.254   0.954  out2<6>1 (out2_6_OBUF)
+     LUT5:I2->O            1   0.235   0.000  Mmux_iSegmentos_Display[6]_out[6]_mux_625_OUT71 (iSegmentos_Display[6]_out[6]_mux_625_OUT<6>)
+     FDE:D                     0.074          iSegmentos_Display_6
+    ----------------------------------------
+    Total                      5.206ns (1.891ns logic, 3.315ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iBoton_Tiempo_Lavado'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.359ns (Levels of Logic = 2)
+  Source:            iEncender (PAD)
+  Destination:       iTiempoLavado_1 (FF)
+  Destination Clock: iBoton_Tiempo_Lavado rising
+
+  Data Path: iEncender to iTiempoLavado_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iEncender_IBUF (iEncender_IBUF)
+     INV:I->O             39   0.255   1.636  iEncender_inv1_INV_0 (iEncender_inv)
+     FDCE:CLR                  0.459          iTiempoLavado_4
+    ----------------------------------------
+    Total                      4.359ns (2.042ns logic, 2.317ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iBoton_Tiempo'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.359ns (Levels of Logic = 2)
+  Source:            iEncender (PAD)
+  Destination:       iTiempo_Bajo (FF)
+  Destination Clock: iBoton_Tiempo rising
+
+  Data Path: iEncender to iTiempo_Bajo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iEncender_IBUF (iEncender_IBUF)
+     INV:I->O             39   0.255   1.636  iEncender_inv1_INV_0 (iEncender_inv)
+     FDCE:CLR                  0.459          iTiempo_FULL
+    ----------------------------------------
+    Total                      4.359ns (2.042ns logic, 2.317ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iCLK_Tiempo_1HZ_OBUF'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.359ns (Levels of Logic = 2)
+  Source:            iEncender (PAD)
+  Destination:       bContando (FF)
+  Destination Clock: iCLK_Tiempo_1HZ_OBUF rising
+
+  Data Path: iEncender to bContando
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iEncender_IBUF (iEncender_IBUF)
+     INV:I->O             39   0.255   1.636  iEncender_inv1_INV_0 (iEncender_inv)
+     FDC:CLR                   0.459          iConteo_Tiempo_Llenado_0
+    ----------------------------------------
+    Total                      4.359ns (2.042ns logic, 2.317ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
+  Total number of paths / destination ports: 68 / 24
+-------------------------------------------------------------------------
+Offset:              5.786ns (Levels of Logic = 4)
+  Source:            iPausa (PAD)
+  Destination:       iCount_Frecuencias_0 (FF)
+  Destination Clock: clk_in rising
+
+  Data Path: iPausa to iCount_Frecuencias_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            61   1.328   2.134  iPausa_IBUF (iPausa_IBUF)
+     LUT3:I0->O            1   0.235   0.000  _n11691_lut1 (_n11691_lut1)
+     MUXCY:S->O           22   0.427   1.334  _n11691_cy1 (_n1169)
+     LUT6:I5->O            1   0.254   0.000  iCount_Frecuencias_0_rstpot (iCount_Frecuencias_0_rstpot)
+     FD:D                      0.074          iCount_Frecuencias_0
+    ----------------------------------------
+    Total                      5.786ns (2.318ns logic, 3.468ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_out_OBUF'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.157ns (Levels of Logic = 1)
+  Source:            iLavado_Fast (FF)
+  Destination:       iLavado_Fast (PAD)
+  Source Clock:      clk_out_OBUF rising
+
+  Data Path: iLavado_Fast to iLavado_Fast
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            44   0.525   1.720  iLavado_Fast (iLavado_Fast_OBUF)
+     OBUF:I->O                 2.912          iLavado_Fast_OBUF (iLavado_Fast)
+    ----------------------------------------
+    Total                      5.157ns (3.437ns logic, 1.720ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iBoton_Temperatura'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            iLed_Temperatura_3 (FF)
+  Destination:       iLed_Temperatura<3> (PAD)
+  Source Clock:      iBoton_Temperatura rising
+
+  Data Path: iLed_Temperatura_3 to iLed_Temperatura<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.525   0.681  iLed_Temperatura_3 (iLed_Temperatura_3)
+     OBUF:I->O                 2.912          iLed_Temperatura_3_OBUF (iLed_Temperatura<3>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iBoton_Tiempo_Lavado'
+  Total number of paths / destination ports: 227 / 21
+-------------------------------------------------------------------------
+Offset:              11.620ns (Levels of Logic = 7)
+  Source:            iTiempoLavado_2 (FF)
+  Destination:       iOu1t<6> (PAD)
+  Source Clock:      iBoton_Tiempo_Lavado rising
+
+  Data Path: iTiempoLavado_2 to iOu1t<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.525   1.069  iTiempoLavado_2 (iLed_Tiempo_Lavado_1_OBUF)
+     LUT2:I1->O            1   0.254   1.137  iLed_Llenando1 (iLed_Llenando1)
+     LUT6:I0->O            1   0.254   0.682  iLed_Llenando3 (iLed_Llenando3)
+     LUT6:I5->O            1   0.254   0.958  iLed_Llenando6 (iLed_Llenando6)
+     LUT6:I2->O            4   0.254   1.032  iLed_Llenando14 (iLed_Llenando_OBUF)
+     LUT5:I2->O            7   0.235   1.138  Mmux_iSelect_21 (iSelect_2_0_OBUF)
+     LUT3:I0->O            1   0.235   0.681  iOu1t<6>1 (iOu1t_6_OBUF)
+     OBUF:I->O                 2.912          iOu1t_6_OBUF (iOu1t<6>)
+    ----------------------------------------
+    Total                     11.620ns (4.923ns logic, 6.697ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iBoton_Tiempo'
+  Total number of paths / destination ports: 1009 / 21
+-------------------------------------------------------------------------
+Offset:              12.229ns (Levels of Logic = 7)
+  Source:            iTiempo_Bajo (FF)
+  Destination:       iOu1t<6> (PAD)
+  Source Clock:      iBoton_Tiempo rising
+
+  Data Path: iTiempo_Bajo to iOu1t<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            23   0.525   1.813  iTiempo_Bajo (iLed_Segundos_Lavado_0_OBUF)
+     LUT6:I0->O            2   0.254   1.002  iLed_Llenando1411 (iLed_Llenando141)
+     LUT6:I2->O            1   0.254   0.682  iLed_Llenando3 (iLed_Llenando3)
+     LUT6:I5->O            1   0.254   0.958  iLed_Llenando6 (iLed_Llenando6)
+     LUT6:I2->O            4   0.254   1.032  iLed_Llenando14 (iLed_Llenando_OBUF)
+     LUT5:I2->O            7   0.235   1.138  Mmux_iSelect_21 (iSelect_2_0_OBUF)
+     LUT3:I0->O            1   0.235   0.681  iOu1t<6>1 (iOu1t_6_OBUF)
+     OBUF:I->O                 2.912          iOu1t_6_OBUF (iOu1t<6>)
+    ----------------------------------------
+    Total                     12.229ns (4.923ns logic, 7.306ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iCLK_Tiempo_1HZ_OBUF'
+  Total number of paths / destination ports: 4233 / 46
+-------------------------------------------------------------------------
+Offset:              12.760ns (Levels of Logic = 7)
+  Source:            iConteo_Tiempo_Llenado_2 (FF)
+  Destination:       iOu1t<6> (PAD)
+  Source Clock:      iCLK_Tiempo_1HZ_OBUF rising
+
+  Data Path: iConteo_Tiempo_Llenado_2 to iOu1t<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             62   0.525   2.344  iConteo_Tiempo_Llenado_2 (iConteo_Tiempo_Llenado_2)
+     LUT6:I1->O            2   0.254   1.002  iLed_Llenando1411 (iLed_Llenando141)
+     LUT6:I2->O            1   0.254   0.682  iLed_Llenando3 (iLed_Llenando3)
+     LUT6:I5->O            1   0.254   0.958  iLed_Llenando6 (iLed_Llenando6)
+     LUT6:I2->O            4   0.254   1.032  iLed_Llenando14 (iLed_Llenando_OBUF)
+     LUT5:I2->O            7   0.235   1.138  Mmux_iSelect_21 (iSelect_2_0_OBUF)
+     LUT3:I0->O            1   0.235   0.681  iOu1t<6>1 (iOu1t_6_OBUF)
+     OBUF:I->O                 2.912          iOu1t_6_OBUF (iOu1t<6>)
+    ----------------------------------------
+    Total                     12.760ns (4.923ns logic, 7.837ns route)
+                                       (38.6% logic, 61.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pb'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              6.500ns (Levels of Logic = 2)
+  Source:            btn (FF)
+  Destination:       out3<2> (PAD)
+  Source Clock:      pb rising
+
+  Data Path: btn to out3<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             40   0.525   2.084  btn (btn_OBUF)
+     LUT5:I0->O            2   0.254   0.725  out3<2>1 (out3_2_OBUF)
+     OBUF:I->O                 2.912          out3_2_OBUF (out3<2>)
+    ----------------------------------------
+    Total                      6.500ns (3.691ns logic, 2.809ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_outDisplay_OBUF'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            iBase_Segmentos_2 (FF)
+  Destination:       iBase_Segmentos<2> (PAD)
+  Source Clock:      clk_outDisplay_OBUF rising
+
+  Data Path: iBase_Segmentos_2 to iBase_Segmentos<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.681  iBase_Segmentos_2 (iBase_Segmentos_2)
+     OBUF:I->O                 2.912          iBase_Segmentos_2_OBUF (iBase_Segmentos<2>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iStart'
+  Total number of paths / destination ports: 68 / 15
+-------------------------------------------------------------------------
+Offset:              11.564ns (Levels of Logic = 6)
+  Source:            iStart_out (FF)
+  Destination:       iOu1t<5> (PAD)
+  Source Clock:      iStart rising
+
+  Data Path: iStart_out to iOu1t<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             55   0.525   1.968  iStart_out (iStart_out_OBUF)
+     LUT3:I1->O            2   0.250   0.834  iLed_Vaceando21 (iLed_Vaceando2)
+     LUT5:I3->O            1   0.250   1.112  iLed_Vaceando2 (iLed_Vaceando3)
+     LUT6:I1->O            5   0.254   1.117  iLed_Vaceando6 (iLed_Vaceando_OBUF)
+     LUT6:I2->O            8   0.254   1.172  Mmux_iSelect_23 (iSelect_2_2_OBUF)
+     LUT3:I0->O            1   0.235   0.681  iOu1t<5>1 (iOu1t_5_OBUF)
+     OBUF:I->O                 2.912          iOu1t_5_OBUF (iOu1t<5>)
+    ----------------------------------------
+    Total                     11.564ns (4.680ns logic, 6.884ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.591ns (Levels of Logic = 1)
+  Source:            clk_outDisplay (FF)
+  Destination:       clk_outDisplay (PAD)
+  Source Clock:      clk_in rising
+
+  Data Path: clk_outDisplay to clk_outDisplay
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.525   1.154  clk_outDisplay (clk_outDisplay_OBUF)
+     OBUF:I->O                 2.912          clk_outDisplay_OBUF (clk_outDisplay)
+    ----------------------------------------
+    Total                      4.591ns (3.437ns logic, 1.154ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iEncender'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.816ns (Levels of Logic = 1)
+  Source:            iEncendido (FF)
+  Destination:       iEncendido (PAD)
+  Source Clock:      iEncender rising
+
+  Data Path: iEncendido to iEncendido
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             24   0.525   1.379  iEncendido (iEncendido_OBUF)
+     OBUF:I->O                 2.912          iEncendido_OBUF (iEncendido)
+    ----------------------------------------
+    Total                      4.816ns (3.437ns logic, 1.379ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 83 / 45
+-------------------------------------------------------------------------
+Delay:               12.518ns (Levels of Logic = 7)
+  Source:            iPausa (PAD)
+  Destination:       iOu1t<5> (PAD)
+
+  Data Path: iPausa to iOu1t<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            61   1.328   2.134  iPausa_IBUF (iPausa_IBUF)
+     LUT3:I0->O            2   0.235   0.834  iLed_Vaceando21 (iLed_Vaceando2)
+     LUT5:I3->O            1   0.250   1.112  iLed_Vaceando2 (iLed_Vaceando3)
+     LUT6:I1->O            5   0.254   1.117  iLed_Vaceando6 (iLed_Vaceando_OBUF)
+     LUT6:I2->O            8   0.254   1.172  Mmux_iSelect_23 (iSelect_2_2_OBUF)
+     LUT3:I0->O            1   0.235   0.681  iOu1t<5>1 (iOu1t_5_OBUF)
+     OBUF:I->O                 2.912          iOu1t_5_OBUF (iOu1t<5>)
+    ----------------------------------------
+    Total                     12.518ns (5.468ns logic, 7.050ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_in
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_in              |    5.206|         |         |         |
+clk_out_OBUF        |    4.716|         |         |         |
+iCLK_Tiempo_1HZ_OBUF|    6.954|         |         |         |
+iStart              |    7.040|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_outDisplay_OBUF
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_outDisplay_OBUF |    3.261|         |         |         |
+iCLK_Tiempo_1HZ_OBUF|    8.272|         |         |         |
+pb                  |    3.917|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_out_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_out_OBUF   |    2.850|         |         |         |
+iEncender      |    3.435|         |         |         |
+iStart         |    3.706|         |         |         |
+pb             |    3.604|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iBoton_Temperatura
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk_out_OBUF      |    3.954|         |         |         |
+iBoton_Temperatura|    2.006|         |         |         |
+iEncender         |    3.859|         |         |         |
+iStart            |    4.160|         |         |         |
+pb                |    4.108|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iBoton_Tiempo
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_out_OBUF   |    4.079|         |         |         |
+iBoton_Tiempo  |    1.938|         |         |         |
+iEncender      |    3.959|         |         |         |
+pb             |    4.079|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iBoton_Tiempo_Lavado
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_out_OBUF        |    4.079|         |         |         |
+iBoton_Tiempo_Lavado|    1.938|         |         |         |
+iEncender           |    3.959|         |         |         |
+pb                  |    4.079|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iCLK_Tiempo_1HZ_OBUF
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_out_OBUF        |    8.291|         |         |         |
+iBoton_Tiempo       |    8.393|         |         |         |
+iBoton_Tiempo_Lavado|    8.559|         |         |         |
+iCLK_Tiempo_1HZ_OBUF|    5.566|         |         |         |
+iEncender           |    6.831|         |         |         |
+iStart              |    9.325|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iEncender
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iEncender      |    2.260|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iStart
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iStart         |    3.863|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pb
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iEncender      |    3.343|         |         |         |
+pb             |    2.260|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 41.00 secs
+Total CPU time to Xst completion: 41.54 secs
+ 
+--> 
+
+Total memory usage is 4533280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

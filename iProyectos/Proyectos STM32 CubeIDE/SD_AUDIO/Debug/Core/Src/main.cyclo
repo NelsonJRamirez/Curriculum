@@ -1,0 +1,11 @@
+main.c:73:6:next_sound	1
+main.c:83:6:back_sound	1
+main.c:98:5:main	6
+main.c:197:6:SystemClock_Config	4
+main.c:241:13:MX_ADC1_Init	3
+main.c:295:13:MX_DAC_Init	3
+main.c:332:13:MX_TIM2_Init	4
+main.c:374:13:MX_USART2_UART_Init	2
+main.c:405:13:MX_DMA_Init	1
+main.c:425:13:MX_GPIO_Init	1
+main.c:471:6:Error_Handler	1

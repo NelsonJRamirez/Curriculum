@@ -1,0 +1,323 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\silis\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml Examen.twx Examen.ncd -o Examen.twr Examen.pcf
+
+Design file:              Examen.ncd
+Physical constraint file: Examen.pcf
+Device,package,speed:     xc6slx9,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_in
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+iPausa      |    4.849(R)|      SLOW  |   -1.111(R)|      FAST  |clk_in_BUFGP      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk_in to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+clk_out        |        11.881(R)|      SLOW  |         5.398(R)|      FAST  |clk_in_BUFGP      |   0.000|
+clk_outDisplay |        11.150(R)|      SLOW  |         4.893(R)|      FAST  |clk_in_BUFGP      |   0.000|
+clk_outs       |        11.297(R)|      SLOW  |         5.095(R)|      FAST  |clk_in_BUFGP      |   0.000|
+iCLK_Tiempo_1HZ|        11.781(R)|      SLOW  |         5.370(R)|      FAST  |clk_in_BUFGP      |   0.000|
+iMusic         |        11.213(R)|      SLOW  |         5.012(R)|      FAST  |clk_in_BUFGP      |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock iBoton_Temperatura to Pad
+-------------------+-----------------+------------+-----------------+------------+------------------------+--------+
+                   |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination        |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+-------------------+-----------------+------------+-----------------+------------+------------------------+--------+
+iAgua_Caliente     |        11.454(R)|      SLOW  |         5.141(R)|      FAST  |iBoton_Temperatura_BUFGP|   0.000|
+iAgua_Fria         |        11.126(R)|      SLOW  |         4.881(R)|      FAST  |iBoton_Temperatura_BUFGP|   0.000|
+iLed_Temperatura<0>|         9.430(R)|      SLOW  |         3.987(R)|      FAST  |iBoton_Temperatura_BUFGP|   0.000|
+iLed_Temperatura<1>|         9.559(R)|      SLOW  |         4.084(R)|      FAST  |iBoton_Temperatura_BUFGP|   0.000|
+iLed_Temperatura<2>|         9.462(R)|      SLOW  |         4.038(R)|      FAST  |iBoton_Temperatura_BUFGP|   0.000|
+iLed_Temperatura<3>|         9.301(R)|      SLOW  |         3.958(R)|      FAST  |iBoton_Temperatura_BUFGP|   0.000|
+-------------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock iBoton_Tiempo to Pad
+-----------------------+-----------------+------------+-----------------+------------+-------------------+--------+
+                       |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                   | Clock  |
+Destination            |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)  | Phase  |
+-----------------------+-----------------+------------+-----------------+------------+-------------------+--------+
+iLed_Llenando          |        17.009(R)|      SLOW  |         6.789(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iLed_Motor             |        16.829(R)|      SLOW  |         6.123(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iLed_Segundos_Lavado<0>|        11.849(R)|      SLOW  |         5.338(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iLed_Segundos_Lavado<1>|        12.939(R)|      SLOW  |         6.066(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iLed_Segundos_Lavado<2>|        12.337(R)|      SLOW  |         5.707(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iLed_Segundos_Lavado<3>|        12.866(R)|      SLOW  |         6.036(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iLed_Vaceando          |        14.611(R)|      SLOW  |         6.418(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<0>               |        17.986(R)|      SLOW  |         6.232(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<1>               |        18.083(R)|      SLOW  |         5.729(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<2>               |        18.168(R)|      SLOW  |         6.085(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<3>               |        18.042(R)|      SLOW  |         5.675(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<4>               |        18.023(R)|      SLOW  |         5.976(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<5>               |        18.160(R)|      SLOW  |         5.728(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iOu1t<6>               |        17.998(R)|      SLOW  |         5.688(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iSelect_2<0>           |        17.323(R)|      SLOW  |         5.931(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iSelect_2<1>           |        15.388(R)|      SLOW  |         5.706(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iSelect_2<2>           |        16.804(R)|      SLOW  |         5.794(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iTiempo_Alto           |        11.176(R)|      SLOW  |         4.935(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iTiempo_Bajo           |        12.140(R)|      SLOW  |         5.553(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iTiempo_FULL           |        12.044(R)|      SLOW  |         5.564(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+iTiempo_Medio          |        11.137(R)|      SLOW  |         4.929(R)|      FAST  |iBoton_Tiempo_BUFGP|   0.000|
+-----------------------+-----------------+------------+-----------------+------------+-------------------+--------+
+
+Clock iBoton_Tiempo_Lavado to Pad
+---------------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+                     |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                          | Clock  |
+Destination          |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)         | Phase  |
+---------------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+iLed_Llenando        |        15.345(R)|      SLOW  |         6.350(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iLed_Motor           |        15.416(R)|      SLOW  |         6.092(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iLed_Tiempo_Lavado<0>|        12.266(R)|      SLOW  |         5.668(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iLed_Tiempo_Lavado<1>|        12.180(R)|      SLOW  |         5.588(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iLed_Tiempo_Lavado<2>|        11.424(R)|      SLOW  |         5.116(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iLed_Tiempo_Lavado<3>|        11.926(R)|      SLOW  |         5.435(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iLed_Vaceando        |        15.767(R)|      SLOW  |         7.251(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<0>             |        17.401(R)|      SLOW  |         6.698(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<1>             |        16.716(R)|      SLOW  |         6.692(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<2>             |        17.123(R)|      SLOW  |         6.549(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<3>             |        16.533(R)|      SLOW  |         6.624(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<4>             |        16.978(R)|      SLOW  |         6.440(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<5>             |        16.651(R)|      SLOW  |         6.677(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iOu1t<6>             |        16.631(R)|      SLOW  |         6.651(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iSelect_2<0>         |        15.956(R)|      SLOW  |         6.344(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iSelect_2<1>         |        16.544(R)|      SLOW  |         7.573(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iSelect_2<2>         |        15.140(R)|      SLOW  |         6.007(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iTiempoLavado_1      |        13.256(R)|      SLOW  |         6.317(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iTiempoLavado_2      |        12.727(R)|      SLOW  |         5.948(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iTiempoLavado_3      |        11.113(R)|      SLOW  |         4.884(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+iTiempoLavado_4      |        12.706(R)|      SLOW  |         5.915(R)|      FAST  |iBoton_Tiempo_Lavado_BUFGP|   0.000|
+---------------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+
+Clock iEncender to Pad
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                   | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)  | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+iEncendido  |        11.994(R)|      SLOW  |         5.507(R)|      FAST  |iEncender_IBUF_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+
+Clock iStart to Pad
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+iLed_Llenando|        14.199(R)|      SLOW  |         6.712(R)|      FAST  |iStart_BUFGP      |   0.000|
+iLed_Motor   |        14.996(R)|      SLOW  |         5.654(R)|      FAST  |iStart_BUFGP      |   0.000|
+iLed_Vaceando|        15.347(R)|      SLOW  |         7.225(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<0>     |        16.981(R)|      SLOW  |         5.886(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<1>     |        16.296(R)|      SLOW  |         5.563(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<2>     |        16.703(R)|      SLOW  |         5.737(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<3>     |        16.113(R)|      SLOW  |         5.509(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<4>     |        16.558(R)|      SLOW  |         5.628(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<5>     |        16.231(R)|      SLOW  |         5.562(R)|      FAST  |iStart_BUFGP      |   0.000|
+iOu1t<6>     |        16.211(R)|      SLOW  |         5.522(R)|      FAST  |iStart_BUFGP      |   0.000|
+iSelect_2<0> |        15.536(R)|      SLOW  |         5.350(R)|      FAST  |iStart_BUFGP      |   0.000|
+iSelect_2<1> |        16.124(R)|      SLOW  |         5.540(R)|      FAST  |iStart_BUFGP      |   0.000|
+iSelect_2<2> |        14.624(R)|      SLOW  |         5.195(R)|      FAST  |iStart_BUFGP      |   0.000|
+iStart_out   |        11.152(R)|      SLOW  |         4.949(R)|      FAST  |iStart_BUFGP      |   0.000|
+led          |        11.069(R)|      SLOW  |         4.766(R)|      FAST  |iStart_BUFGP      |   0.000|
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock pb to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+btn         |        12.088(R)|      SLOW  |         5.442(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<0>  |        11.710(R)|      SLOW  |         5.233(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<1>  |        11.528(R)|      SLOW  |         5.151(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<2>  |        11.494(R)|      SLOW  |         5.085(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<3>  |        11.631(R)|      SLOW  |         5.181(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<4>  |        12.410(R)|      SLOW  |         5.628(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<5>  |        12.260(R)|      SLOW  |         5.538(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<6>  |        12.541(R)|      SLOW  |         5.696(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<7>  |        12.393(R)|      SLOW  |         5.613(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<8>  |        12.138(R)|      SLOW  |         5.448(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<9>  |        12.856(R)|      SLOW  |         5.877(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<10> |        12.800(R)|      SLOW  |         5.984(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<11> |        12.295(R)|      SLOW  |         5.572(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<12> |        12.385(R)|      SLOW  |         5.628(R)|      FAST  |pb_BUFGP          |   0.000|
+iSelect<14> |        13.102(R)|      SLOW  |         6.010(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<0>     |        12.578(R)|      SLOW  |         5.736(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<1>     |        11.473(R)|      SLOW  |         5.121(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<2>     |        13.399(R)|      SLOW  |         6.217(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<3>     |        11.946(R)|      SLOW  |         5.440(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<4>     |        11.276(R)|      SLOW  |         5.025(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<5>     |        11.430(R)|      SLOW  |         5.081(R)|      FAST  |pb_BUFGP          |   0.000|
+out2<6>     |        11.470(R)|      SLOW  |         5.161(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<0>     |        11.193(R)|      SLOW  |         4.939(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<1>     |        11.096(R)|      SLOW  |         4.878(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<2>     |        11.543(R)|      SLOW  |         5.323(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<3>     |        11.382(R)|      SLOW  |         5.097(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<4>     |        11.013(R)|      SLOW  |         4.869(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<5>     |        10.904(R)|      SLOW  |         4.837(R)|      FAST  |pb_BUFGP          |   0.000|
+out3<6>     |        11.419(R)|      SLOW  |         5.123(R)|      FAST  |pb_BUFGP          |   0.000|
+out<0>      |        11.022(R)|      SLOW  |         4.862(R)|      FAST  |pb_BUFGP          |   0.000|
+out<1>      |        11.585(R)|      SLOW  |         5.356(R)|      FAST  |pb_BUFGP          |   0.000|
+out<2>      |        11.006(R)|      SLOW  |         4.852(R)|      FAST  |pb_BUFGP          |   0.000|
+out<3>      |        12.189(R)|      SLOW  |         5.576(R)|      FAST  |pb_BUFGP          |   0.000|
+out<4>      |        11.487(R)|      SLOW  |         5.305(R)|      FAST  |pb_BUFGP          |   0.000|
+out<5>      |        10.455(R)|      SLOW  |         4.523(R)|      FAST  |pb_BUFGP          |   0.000|
+out<6>      |        11.244(R)|      SLOW  |         4.981(R)|      FAST  |pb_BUFGP          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |    5.853|         |         |         |
+iStart         |    9.555|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iBoton_Temperatura
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+iBoton_Temperatura|    1.758|         |         |         |
+iEncender         |    3.531|    3.327|         |         |
+iStart            |    3.877|         |         |         |
+pb                |    2.918|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iBoton_Tiempo
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iBoton_Tiempo  |    1.637|         |         |         |
+iEncender      |    3.499|    2.734|         |         |
+pb             |    3.275|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iBoton_Tiempo_Lavado
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+iBoton_Tiempo_Lavado|    1.486|         |         |         |
+iEncender           |    3.408|    2.768|         |         |
+pb                  |    3.184|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iEncender
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iEncender      |    1.569|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iStart
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iStart         |    1.897|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pb
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iEncender      |    3.359|         |         |         |
+pb             |    1.279|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+iPausa         |iLed_Llenando  |   16.047|
+iPausa         |iLed_Motor     |   16.844|
+iPausa         |iLed_Vaceando  |   17.195|
+iPausa         |iOu1t<0>       |   18.829|
+iPausa         |iOu1t<1>       |   18.144|
+iPausa         |iOu1t<2>       |   18.551|
+iPausa         |iOu1t<3>       |   17.961|
+iPausa         |iOu1t<4>       |   18.406|
+iPausa         |iOu1t<5>       |   18.079|
+iPausa         |iOu1t<6>       |   18.059|
+iPausa         |iSelect<0>     |   14.526|
+iPausa         |iSelect<1>     |   14.757|
+iPausa         |iSelect<2>     |   14.723|
+iPausa         |iSelect<3>     |   14.447|
+iPausa         |iSelect<5>     |   14.626|
+iPausa         |iSelect<6>     |   15.331|
+iPausa         |iSelect<7>     |   14.759|
+iPausa         |iSelect<8>     |   14.928|
+iPausa         |iSelect<10>    |   13.896|
+iPausa         |iSelect<11>    |   14.549|
+iPausa         |iSelect<12>    |   14.639|
+iPausa         |iSelect_2<0>   |   17.384|
+iPausa         |iSelect_2<1>   |   17.972|
+iPausa         |iSelect_2<2>   |   16.472|
+iPausa         |out2<0>        |   13.838|
+iPausa         |out2<1>        |   12.460|
+iPausa         |out2<2>        |   16.004|
+iPausa         |out2<3>        |   13.120|
+iPausa         |out2<4>        |   12.476|
+iPausa         |out2<5>        |   12.366|
+iPausa         |out2<6>        |   14.185|
+iPausa         |out3<0>        |   12.305|
+iPausa         |out3<1>        |   12.208|
+iPausa         |out3<2>        |   12.639|
+iPausa         |out3<3>        |   12.219|
+iPausa         |out3<4>        |   12.360|
+iPausa         |out3<5>        |   12.251|
+iPausa         |out3<6>        |   12.256|
+iPausa         |out<0>         |   12.544|
+iPausa         |out<1>         |   12.824|
+iPausa         |out<2>         |   13.586|
+iPausa         |out<3>         |   12.320|
+iPausa         |out<4>         |   12.580|
+iPausa         |out<5>         |   12.295|
+iPausa         |out<6>         |   13.660|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Apr 20 15:01:56 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+
