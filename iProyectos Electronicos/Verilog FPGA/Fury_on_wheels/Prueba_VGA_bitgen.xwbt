@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\18298\Desktop\juego obed\FuriaSobreRuedas\Fury_on_wheels\Prueba_VGA.ncd
+OUTFILE=C:\Users\18298\Desktop\juego obed\FuriaSobreRuedas\Fury_on_wheels\Prueba_VGA.bit
+FAMILY=Spartan6
+PART=xc6slx9-3csg324
+WORKINGDIR=C:\Users\18298\Desktop\juego obed\FuriaSobreRuedas\Fury_on_wheels
+LICENSE=WebPack
+USER_INFO=212637245_0_0_972
