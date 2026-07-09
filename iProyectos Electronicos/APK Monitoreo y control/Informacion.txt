@@ -1,0 +1,22 @@
+Esta APK fue realizada para el armario hidroponico.
+
+- Cuenta con una bienvenida personalizada.
+- Un menu para conectarse via Bluetooth.
+- Advertencias en los menus.
+- Menu de monitoreo en tiempo real. Donde mide:
+
+	1) Temperatura.
+	2) Humedad.
+	3) Valor del PH.
+	4) Valor EC (Conductividad electrica).
+	5) Dias de germinacion.
+	6) Estado de la bomba ON/OFF.
+	7) Estado de los abanicos ON/OFF.
+	8) Tiene un boton para iniciar los dias.
+
+- Menu para controlar de manera manual. Donde tiene:
+
+	1) Abanicos [ Encender / Apagar ]
+	2) Bomba [ Encender / Apagar ]
+	3) Luces [ Encender / Apagar ]
+	4) Slider para variar las luces.
