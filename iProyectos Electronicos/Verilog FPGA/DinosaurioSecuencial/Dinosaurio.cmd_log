@@ -1,0 +1,191 @@
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 
+xst -intstyle ise -ifn "D:/silis/DinosaurioSecuencial/Dinosaurio.xst" -ofn "D:/silis/DinosaurioSecuencial/Dinosaurio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx9-csg324-2 Dinosaurio.ngc Dinosaurio.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dinosaurio_map.ncd Dinosaurio.ngd Dinosaurio.pcf 
+par -w -intstyle ise -ol high -mt off Dinosaurio_map.ncd Dinosaurio.ncd Dinosaurio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dinosaurio.twx Dinosaurio.ncd -o Dinosaurio.twr Dinosaurio.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Dinosaurio.ut Dinosaurio.ncd 

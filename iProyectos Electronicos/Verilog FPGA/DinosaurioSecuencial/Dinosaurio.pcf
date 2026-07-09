@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Mar 24 09:45:42 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "iBase_Segmentos<2>" LOCATE = SITE "B3" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "M16" LEVEL 1;
+COMP "FB" LOCATE = SITE "T18" LEVEL 1;
+COMP "iGameOver" LOCATE = SITE "P15" LEVEL 1;
+COMP "iCorriendo" LOCATE = SITE "U17" LEVEL 1;
+COMP "FA" LOCATE = SITE "T17" LEVEL 1;
+COMP "iAgacharse" LOCATE = SITE "N15" LEVEL 1;
+COMP "iSaltar" LOCATE = SITE "P16" LEVEL 1;
+COMP "iComenzar" LOCATE = SITE "N16" LEVEL 1;
+COMP "iSegmentos_Display<0>" LOCATE = SITE "A3" LEVEL 1;
+COMP "iSegmentos_Display<1>" LOCATE = SITE "B4" LEVEL 1;
+COMP "iSegmentos_Display<2>" LOCATE = SITE "A4" LEVEL 1;
+COMP "iSegmentos_Display<3>" LOCATE = SITE "C4" LEVEL 1;
+COMP "iSegmentos_Display<4>" LOCATE = SITE "C5" LEVEL 1;
+COMP "iSegmentos_Display<5>" LOCATE = SITE "D6" LEVEL 1;
+COMP "iSegmentos_Display<6>" LOCATE = SITE "C6" LEVEL 1;
+COMP "X" LOCATE = SITE "L18" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "V10" LEVEL 1;
+COMP "Z" LOCATE = SITE "M18" LEVEL 1;
+COMP "iBase_Segmentos<0>" LOCATE = SITE "B2" LEVEL 1;
+COMP "iBase_Segmentos<1>" LOCATE = SITE "A2" LEVEL 1;
+NET "clk_in_BUFGP/IBUFG" PERIOD = 10 ns HIGH 50%;
+SCHEMATIC END;
+
