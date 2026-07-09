@@ -1,0 +1,15 @@
+# Diseño y fabricación de filtros industriales
+
+Este proyecto consistió en el diseño y documentación de filtros industriales metálicos utilizados 
+como protección en una línea de proceso. La idea principal fue crear un conjunto capaz de permitir el 
+paso del flujo, mientras ayuda a retener residuos, partículas grandes o elementos que pudieran afectar el funcionamiento del sistema.
+
+El trabajo incluyó el diseño del filtro perforado, la T de conexión, la tapa, el soporte y el ensamble 
+general. Cada pieza fue organizada en planos para facilitar su fabricación en taller, tomando en cuenta 
+la forma de armado, la posición de los componentes y la funcionalidad del conjunto.
+
+Mi participación fue realizar el modelado 3D en SolidWorks, preparar los planos de fabricación, definir los 
+detalles principales de cada pieza, organizar el ensamble y documentar el proyecto para que pudiera ser construido de forma clara y ordenada.
+
+Este proyecto representó una experiencia importante porque combinó diseño mecánico, fabricación metálica
+y documentación técnica aplicada a una necesidad real de planta, logrando una solución práctica, funcional y preparada para trabajo industrial.

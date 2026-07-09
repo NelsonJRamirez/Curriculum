@@ -1,0 +1,22 @@
+Diseño y documentación de moldes industriales
+
+Este proyecto consistió en el diseño y desarrollo de moldes industriales rectangulares, 
+cilíndricos y ovalados, realizados para fabricación en taller. En total se desarrollaron 
+32 planos, aunque en esta carpeta solo se muestran 3 planos finales como muestra del trabajo realizado.
+
+El objetivo fue crear una documentación clara y organizada, donde se pudiera entender la forma 
+general de cada molde, su ensamble, sus piezas principales y los detalles necesarios para llevarlo
+a fabricación. Durante el proceso se trabajaron modelos 3D, vistas de conjunto, despieces, agarres,
+refuerzos, sistemas de centrado y detalles de armado.
+
+Mi participación fue realizar el diseño de los moldes, modelar las piezas, preparar los ensambles,
+crear los planos finales, organizar la información para taller y hacer los ajustes necesarios hasta
+llegar a una versión lista para fabricación. También participé en la revisión de detalles, corrección
+de interferencias y presentación final de la documentación.
+
+Algunas piezas de fabricación fueron obviadas en los archivos mostrados, ya que estos planos representan
+una selección resumida del proyecto final. Aun así, reflejan el trabajo principal de diseño, organización
+y documentación realizado durante el desarrollo de los moldes.
+
+Este proyecto fue una experiencia importante porque combinó diseño mecánico, preparación de planos y
+enfoque práctico para fabricación real, logrando una documentación más clara, ordenada y funcional para el proceso de taller.
